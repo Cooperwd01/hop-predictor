@@ -1,0 +1,47 @@
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+#home-title{
+  color:white;
+  font-weight: 800;
+  font-size: 3.5em;
+}
+#home-cont{
+  background-image: url(/images/bg/desktop-bg.jpg);
+  background-size: cover;
+  min-height: 650px;
+}
+footer {
+  display:block;
+  border-top: 3px solid black;
+}
+footer a {
+  margin-right: 20px;
+}
+.login-container{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255, 0.89);
+  border-radius: 5px;
+}
+@media only screen and (max-width:991px) {
+  .login-container{
+    width: 100%;
+  }
+  #home-cont{
+    background-image: url(/images/bg/mobile-bg-2.jpg);
+    background-size: cover;
+    min-height: 600px;
+  }
+}
+@media only screen and (max-width:641px) {
+  .login-container{
+    width: 90%;
+  }
+}

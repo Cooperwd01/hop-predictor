@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="/app.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>User overview</title>
+  </head>
+  <body>
+    <header class="user-overview-head">
+      <h1 class="pt-5 pb-5 text-center">
+        Overview  
+      </h1>
+      <div class="container-fluid bg-light">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span>Menu</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Submit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Past results</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Table</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="home-cont" class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="warning-box box-shadow mt-3 p-3">
+              <span>The next deadline is <span>02/03/2021</span>. <a href="#">Submit your predictions now</a></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-5">
+            <div class="box-shadow mt-5 p-4">
+              <h2 class="open-sans mb-3">Latest results</h2>
+              <span>Gameweek 15</span>
+              <hr> 
+              <ul class="matches__group">
+                <li id="game-01">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Arsenal
+                      <img class="club-icons" src="images/clubs/01-arsenal.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/02-villa.png" />
+                      Aston Villa
+                    </span>
+                  </span>
+                </li>
+                <li id="game-02">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Brighton
+                      <img class="club-icons" src="images/clubs/03-brighton.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/04-burnley.png" />
+                      Burnley
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-03">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Chelsea
+                      <img class="club-icons" src="images/clubs/05-chelsea.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/06-palace.png" />
+                      Crystal Palace
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-04">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Everton
+                      <img class="club-icons" src="images/clubs/07-everton.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/08-fulham.png" />
+                      Fulham
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-05">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Leeds United
+                      <img class="club-icons" src="images/clubs/09-leeds.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/10-leicester.png" />
+                      Leicester City
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-06">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Liverpool
+                      <img class="club-icons" src="images/clubs/11-liverpool.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/12-mancity.png" />
+                      Man City
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-07">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Man United
+                      <img class="club-icons" src="images/clubs/13-scum.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/14-nufc.png" />
+                      Newcastle United
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-08">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Sheff United
+                      <img class="club-icons" src="images/clubs/15-sheffu.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/16-soton.png" />
+                      Southampton
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-09">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      Spurs
+                      <img class="club-icons" src="images/clubs/17-spurs.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/18-wba.png" />
+                      West Brom
+                    </span>
+                  </span>
+                </li> 
+                <li id="game-10">
+                  <span class="matches__item matches__link">
+                    <span class="home-team matches__item-col matches__participant matches__participant--side1">
+                      West Ham
+                      <img class="club-icons" src="images/clubs/19-westham.png" />
+                    </span>
+                    <span class="matches__item-col matches__status">
+                      <span class="matches__teamscores">
+                        <span class="matches__teamscores-side">
+                          1
+                        </span>
+                        -
+                        <span class="matches__teamscores-side">
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span class="away-team matches__item-col matches__participant matches__participant--side2">
+                      <img class="club-icons" src="images/clubs/20-wolves.png" />
+                      Wolves
+                    </span>
+                  </span>
+                </li> 
+              </ul>
+            </div>
+            <div class="box-shadow mt-5 p-4">
+              <h2 class="open-sans mb-3">League table</h2>
+              <hr>
+              <table class="ranking-table">
+                <caption class="sr-only">Player rankings so far</caption>
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="sr-only">Position</span>
+                    </th>
+                    <th>
+                      Player
+                    </th>
+                    <th>
+                      Points
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="rank-no">
+                      1.
+                    </th>
+                    <th>
+                      John Johnson
+                    </th>
+                    <th>
+                      120
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      2.
+                    </th>
+                    <th>
+                      Eric Johnson
+                    </th>
+                    <th>
+                      115
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      3.
+                    </th>
+                    <th>
+                      Andy Johnson
+                    </th>
+                    <th>
+                      90
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      4.
+                    </th>
+                    <th>
+                      Tony Johnson
+                    </th>
+                    <th>
+                      90
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      5.
+                    </th>
+                    <th>
+                      Ben Johnson
+                    </th>
+                    <th>
+                      85
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      6.
+                    </th>
+                    <th>
+                      Jake Johns
+                    </th>
+                    <th>
+                      80
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      7.
+                    </th>
+                    <th>
+                      Sarah Johns
+                    </th>
+                    <th>
+                      76
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      8.
+                    </th>
+                    <th>
+                      Beth Johns
+                    </th>
+                    <th>
+                      70
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      9.
+                    </th>
+                    <th>
+                      Tommy Thompson
+                    </th>
+                    <th>
+                      65
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="rank-no">
+                      10.
+                    </th>
+                    <th>
+                      Erika James
+                    </th>
+                    <th>
+                      60
+                    </th>
+                  </tr>
+                </tbody>
+              </table> 
+              <div class="mt-3">
+                <a href="#">View full table</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-3 pb-3">
+      <div id="ftr-links" class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="#">About</a>
+            <a href="#">Cookies</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+   
+  </body>
+</html>

@@ -170,4 +170,7 @@ tr:nth-child(even) {
   .login-container{
     width: 90%;
   }
+  #home-title{
+    font-size: 3em;
+  }
 }
